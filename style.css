@@ -1,0 +1,458 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: #FAFAFA;
+}
+
+@font-face{
+    font-family: Alterwave;
+    src: url("./resources/fonts/Alterwave-Regular.otf");
+}
+
+@font-face{
+    font-family: Sinisuka;
+    src: url("./resources/fonts/Sinisuka.otf");
+}
+
+@font-face{
+    font-family: Anton;
+    src: url("./resources/fonts/Antone\ DEMO.ttf");
+}
+
+@font-face{
+    font-family: Poppins;
+    src: url("./resources/fonts/Poppins-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Poppins-Thin";
+    src: url("./resources/fonts/Poppins-Thin.ttf");
+}
+
+@font-face{
+    font-family: "Poppins-Bold";
+    src: url("./resources/fonts/Poppins-Bold.ttf");
+}
+
+@font-face{
+    font-family: "OpenSans";
+    src: url("./resources/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face{
+    font-family: "OpenSans-Bold";
+    src: url("./resources/fonts/OpenSans-Bold.ttf");
+}
+
+@font-face{
+    font-family: Gilroy-light;
+    src: url("./resources/fonts/gilroy-light.otf");
+}
+
+@font-face{
+    font-family: Gilroy-EBold;
+    src: url("./resources/fonts/Gilroy-ExtraBold.otf");
+}
+
+@font-face{
+    font-family: Nunito-light;
+    src: url("./resources/fonts/Nunito-Light.ttf");
+}
+
+@font-face{
+    font-family: Playfair-Display;
+    src: url("./resources/fonts/PlayfairDisplay-Regular.ttf");
+}
+
+/* CSS-COMPONENTS */
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pointer{
+    cursor: pointer;
+}
+/* END-CSS-COMPONENTS */
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 7% 1% 7%;
+    height:7vh;
+}
+
+.brand-name{
+    font-family: Alterwave;
+    font-weight: 700;
+    font-size: 1.75rem;
+    transform: translate(0, 17.5%);
+}
+
+.nav-list ul{
+    list-style-type: none;
+    display: flex;
+    transform: translate(10%);
+}
+
+.nav-item{
+    margin:0 15px;
+    color: #011627;
+    font-family: Poppins;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 0.6rem;
+}
+
+.nav-item:first-child{
+    color:#DB9C62;
+}
+
+.active::after{
+    content: '';
+    position:absolute;
+    bottom:-7px;
+    left:42.5%;
+    width:11%;
+    border-radius: 100px;;
+    border-bottom: 5px solid #DB9C62;
+}
+
+.user-list-item{
+    width:1.75rem;
+    height:1.75rem;
+    border-radius: 100px;
+    margin:0 7px;
+    background-color:#ffffff;
+}
+
+main{
+    display: flex;
+    height:72vh;
+    overflow: hidden;
+    margin-top:-2vh;
+    padding:0 7% 0 7%;
+
+}
+.main-left{
+    width:48%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.main-left > *{
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text-box{
+    display: flex;
+    justify-content: space-between;
+}
+.text-box-content{
+    display: flex;
+    width:85%;
+    color:#3D405B;
+    flex-direction: column;
+    justify-content: flex-end;
+    transform: translate(17.5%,0);
+}
+.text-box-content h4{
+    font-family: Gilroy-light;
+    font-weight:100;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+
+}
+
+.text-bold{
+    font-family: "Poppins-Bold";
+    font-weight: 900;
+    font-size: 2.1rem;
+    margin:0 0 3px 0;
+}
+
+.text-thin{
+    font-family: "Poppins-Thin";
+    font-weight: 600;
+    font-size: 2.1rem;
+}
+
+.text-p{
+    font-family: Nunito-light;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 0.55rem;
+    margin:3px 0 13px 0;
+    color:#7F8487;
+}
+
+.shop-btn{
+    width:7rem;
+    height:1.6rem;
+    background-color: #20AD69;
+    color:#FFFFFF;
+    border:none;
+    font-size: 0.55rem;
+}
+
+.info-more{
+    margin-top:9%;
+    height:34%;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.info-more img{
+    height:100%;
+    flex-basis: 30%;
+    transform: translate(-10%);
+}
+
+.allen-offers{
+    flex-basis: 42.5%;
+    display: flex;
+    background-color: #F2F2F2;
+    flex-direction: column;
+    height:55%;
+    padding:2.5% 4%;
+    font-family: "Poppins-Thin";
+}
+
+.allen-offers h2{
+    font-size: 1rem;
+    margin-bottom:0.6rem ;
+}
+
+.allen-offers h5{
+    font-family: Poppins;
+font-weight: 600;
+font-size: 0.6rem;
+letter-spacing: 1px;
+position: relative;
+}
+
+.allen-offers h5::after{
+    content: '';
+    position:absolute;
+    bottom:-3px;
+    left:0%;
+    width:10%;
+    border-radius: 100px;
+    border-bottom: 1px solid #000000;
+    transition: all 0.25s ease-out;
+}
+
+.allen-offers h5:hover::after{
+width:30%;
+transition: all 0.25s ease-out;
+}
+
+.offer-box{
+    flex-basis: 23%;
+    height:55%;
+    padding:2%;
+    flex-direction: column;
+    background-color: #E8E8E8;
+}
+
+.offer-box h1{
+    font-family: Poppins-Bold;
+    font-weight: 900;
+    color:#0A2626;
+    font-size: 2.1rem;
+}
+
+.offer-box p{
+    font-size: 0.50rem;
+    text-align: center;
+    margin-top:3px;
+    font-family: "OpenSans";
+    font-weight: 500;
+    color:#011627;
+}
+.main-right{
+    width:56%;
+    display: flex;
+    position: relative;
+}
+
+.hero-main{
+    width:97.5%;
+    height:100%;
+}
+
+.main-right::after{
+content:'';
+position: absolute;
+width:120%;
+height:100%;
+border:1px solid #3D405B;
+border-radius: 1000px;
+/* border-radius: 1000px; */
+/* border-top:2px solid #3D405B; */
+/* border-radius: ; */
+/* border-radius:1000px 1000px 0 0; */
+/* border-right-radius: 1000px; */
+
+transform: translate(-11%,40%);
+z-index: -10;
+}
+
+.main-right::before{
+    content: '';
+    position: absolute;
+    width:200%;
+    height:170%;
+z-index: -10;
+left:-42.5%;
+top:10%;
+border-radius: 1000px;
+    /* border-radius: 2000px; */
+    border: 1px solid rgba(61, 64, 91, 0.1);
+    /* transform: translate(-22.5%); */
+
+}
+
+.active::after{
+    content: '';
+    position:absolute;
+    bottom:-7px;
+    left:42.5%;
+    width:11%;
+    border-radius: 100px;;
+    border-bottom: 5px solid #DB9C62;
+}
+
+.left-caro{
+    transform: translate(0, -100%);
+}
+.right-caro{
+    height:75%;
+}
+
+#sweaters{
+    padding:4% 7% 0 7%;
+    background:linear-gradient(to bottom, #F4F6F5, #EDEEF0) ;
+}
+
+.brand-collab{
+    margin:1% 0 2.5% 0;
+    padding:0 5%;
+    z-index:10;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.brand-collab ul{
+    list-style-type: none;
+    box-shadow: 0px 52px 105px rgba(0, 0, 0, 0.05);
+}
+
+.brand-item{
+flex-basis: 15%;
+margin:5%;
+color:#A1A1A1;
+}
+
+.carvat{
+    font-family: OpenSans-Bold;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.sinisuka{
+    font-family: Sinisuka;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.anton{
+    font-family: Anton;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.gilroy-ebold{
+    font-family: Gilroy-EBold;
+    font-size: 1.4rem;
+    font-weight:100;
+}
+
+.playfair{
+    font-family: Playfair-Display;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.sweater-main img{
+    width:55%;
+    height:100%;
+    transform: translate(-10%,-15%);
+}
+
+.sweater-main-right{
+    height:100%;
+    transform: translate(-10%);
+    padding-bottom:10%;
+}
+
+.sweater-main-right-info{
+    margin-bottom: 20%;
+}
+
+.sweater-main-right-info h5{
+font-family: OpenSans;
+font-weight:400;
+font-size: 0.7rem;
+color:#CF7500;
+}
+
+.sweater-item{
+    flex-direction: column;
+}
+
+.sweater-item img{
+    transform: scale(1.3);
+    width:4.5rem;
+    height:auto;
+    margin-bottom: 1rem;
+}
+
+.sweater-item h3{
+    text-align: center;
+    font-size: 0.6rem;
+    font-family: Poppins;
+    font-weight: 500;
+    color:#656565;
+    margin-bottom: 0.15rem;
+}
+
+.sweater-item p{
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 0.7rem;
+    color:#000000;
+}
+
+.sweater-item p span{
+    color:rgba(1, 22, 39, 0.288);
+    text-decoration:line-through;
+    margin-right:0.3rem;
+}
