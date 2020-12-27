@@ -11,6 +11,7 @@ html{
 
 body{
     background-color: #FAFAFA;
+    overflow-x: hidden;
 }
 
 @font-face{
@@ -91,7 +92,6 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 2% 7% 1% 7%;
-    height:7vh;
 }
 
 .brand-name{
@@ -141,8 +141,6 @@ nav{
 
 main{
     display: flex;
-    height:72vh;
-    overflow: hidden;
     margin-top:-2vh;
     padding:0 7% 0 7%;
 
@@ -154,14 +152,9 @@ main{
     flex-direction: column;
 }
 
-.main-left > *{
-    justify-content: center;
-    align-items: center;
-
-}
-
 .text-box{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .text-box-content{
@@ -198,17 +191,18 @@ main{
     font-weight: 200;
     letter-spacing: 1px;
     font-size: 0.55rem;
-    margin:3px 0 13px 0;
+    margin:3px 0 15px 0;
     color:#7F8487;
 }
 
 .shop-btn{
-    width:7rem;
+    width:6.5rem;
     height:1.6rem;
     background-color: #20AD69;
     color:#FFFFFF;
     border:none;
-    font-size: 0.55rem;
+    font-size: 0.5rem;
+    letter-spacing: 1.5px;
 }
 
 .info-more{
@@ -222,11 +216,13 @@ main{
 .info-more img{
     height:100%;
     flex-basis: 30%;
-    transform: translate(-10%);
+    transform: translate(-10%,10%);
+    position: relative;
+    z-index:100;
 }
 
 .allen-offers{
-    flex-basis: 42.5%;
+    flex-basis: 45%;
     display: flex;
     background-color: #F2F2F2;
     flex-direction: column;
@@ -235,12 +231,13 @@ main{
     font-family: "Poppins-Thin";
 }
 
-.allen-offers h2{
+.allen-style{
     font-size: 1rem;
+    font-family: "Poppins-Thin";
     margin-bottom:0.6rem ;
 }
 
-.allen-offers h5{
+.more{
     font-family: Poppins;
 font-weight: 600;
 font-size: 0.6rem;
@@ -248,7 +245,7 @@ letter-spacing: 1px;
 position: relative;
 }
 
-.allen-offers h5::after{
+.more::after{
     content: '';
     position:absolute;
     bottom:-3px;
@@ -259,13 +256,13 @@ position: relative;
     transition: all 0.25s ease-out;
 }
 
-.allen-offers h5:hover::after{
+.more:hover::after{
 width:30%;
 transition: all 0.25s ease-out;
 }
 
 .offer-box{
-    flex-basis: 23%;
+    flex-basis: 25%;
     height:55%;
     padding:2%;
     flex-direction: column;
@@ -353,7 +350,7 @@ border-radius: 1000px;
 }
 
 .brand-collab{
-    margin:1% 0 2.5% 0;
+    margin:0.25% 0 2.5% 0;
     padding:0 5%;
     z-index:10;
     position: relative;
@@ -404,17 +401,16 @@ color:#A1A1A1;
 .sweater-main img{
     width:55%;
     height:100%;
-    transform: translate(-10%,-15%);
+    transform: translate(-10%);
 }
 
 .sweater-main-right{
     height:100%;
-    transform: translate(-10%);
-    padding-bottom:10%;
+    transform: translate(-6%);
 }
 
 .sweater-main-right-info{
-    margin-bottom: 20%;
+    margin-bottom: 5rem;
 }
 
 .sweater-main-right-info h5{
@@ -426,11 +422,20 @@ color:#CF7500;
 
 .sweater-item{
     flex-direction: column;
+    justify-content: space-between;
 }
 
+.sweater-item:nth-child(1){
+    transform: translate(-10%);
+}
+
+.sweater-item:last-child{
+    transform: translate(10%);
+
+}
 .sweater-item img{
     transform: scale(1.3);
-    width:4.5rem;
+    width:4.65rem;
     height:auto;
     margin-bottom: 1rem;
 }
@@ -455,4 +460,70 @@ color:#CF7500;
     color:rgba(1, 22, 39, 0.288);
     text-decoration:line-through;
     margin-right:0.3rem;
+}
+
+.girls{
+    width: 100%;
+    height: 55vh;
+}
+
+.woolen-kashmiri{
+    width:55%;
+    position: relative;
+    height:100%;
+}
+
+.woolen-kashmiri img, .girl-2 img{
+    width: 100%;
+    height:100%;
+}
+
+.woolen-kashmiri-info{
+    position: absolute;
+    bottom:5%;
+    right:5%;
+    padding:5% 6%;
+    background-color: rgba(255, 255, 255, 0.47);
+}
+
+.woolen-kashmiri-info h2{
+    font-size: 1.3rem;
+}
+.girl-2{
+    width:35%;
+    height:100%;
+}
+
+.girl-2 img{
+    height:100%;
+}
+
+
+.girls-set{
+    width:25%;
+    height:100%;
+    flex-direction: column;
+}
+
+.girls-set img, .girls-info{
+    width: 100%;
+    height:50%;
+}
+
+.girls-info{
+    display: flex;
+    padding:9% 10%;
+    flex-direction: column;
+}
+
+.girls-info h1{
+    font-family: Poppins-Bold;
+    font-weight: 900;
+    color:#0A2626;
+    font-size: 4rem;
+    margin-bottom: -0.5rem;
+}
+
+.girls-info h2{
+    font-size: 1.1rem;
 }
