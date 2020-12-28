@@ -86,35 +86,39 @@ body{
 }
 /* END-CSS-COMPONENTS */
 
-
+header{
+    width:100vw;
+    height: 102vh;
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 7% 1% 7%;
+    height: 10%;
+    padding: 1% 7% 1% 7%;
 }
 
 .brand-name{
     font-family: Alterwave;
     font-weight: 700;
-    font-size: 1.75rem;
+    font-size: 2.25rem;
     transform: translate(0, 17.5%);
 }
 
 .nav-list ul{
     list-style-type: none;
     display: flex;
-    transform: translate(10%);
+    transform: translate(5%);
 }
 
 .nav-item{
-    margin:0 15px;
+    margin:0 25px;
     color: #011627;
     font-family: Poppins;
     font-weight: 500;
     text-transform: uppercase;
     position: relative;
-    font-size: 0.6rem;
+    font-size: 0.85rem;
 }
 
 .nav-item:first-child{
@@ -132,21 +136,22 @@ nav{
 }
 
 .user-list-item{
-    width:1.75rem;
-    height:1.75rem;
+    width:2.3rem;
+    height:2.3rem;
     border-radius: 100px;
-    margin:0 7px;
+    margin:0 10px;
     background-color:#ffffff;
 }
 
 main{
+    /* background-color: cadetblue; */
     display: flex;
-    margin-top:-2vh;
+    height: 90%;
     padding:0 7% 0 7%;
 
 }
 .main-left{
-    width:48%;
+    width:45%;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -159,16 +164,16 @@ main{
 }
 .text-box-content{
     display: flex;
-    width:85%;
+    width:80%;
     color:#3D405B;
     flex-direction: column;
     justify-content: flex-end;
-    transform: translate(17.5%,0);
+    transform: translate(10%,0%);
 }
 .text-box-content h4{
     font-family: Gilroy-light;
     font-weight:100;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     letter-spacing: 2px;
 
 }
@@ -176,32 +181,32 @@ main{
 .text-bold{
     font-family: "Poppins-Bold";
     font-weight: 900;
-    font-size: 2.1rem;
+    font-size: 2.75rem;
     margin:0 0 3px 0;
 }
 
 .text-thin{
     font-family: "Poppins-Thin";
     font-weight: 600;
-    font-size: 2.1rem;
+    font-size: 2.75rem;
 }
 
 .text-p{
     font-family: Nunito-light;
     font-weight: 200;
     letter-spacing: 1px;
-    font-size: 0.55rem;
+    font-size: 0.75rem;
     margin:3px 0 15px 0;
     color:#7F8487;
 }
 
 .shop-btn{
-    width:6.5rem;
-    height:1.6rem;
+    width:8.5rem;
+    height:2.25rem;
     background-color: #20AD69;
     color:#FFFFFF;
     border:none;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     letter-spacing: 1.5px;
 }
 
@@ -209,7 +214,9 @@ main{
     margin-top:9%;
     height:34%;
     display: flex;
+    /* transform: translate(0%,10%); */
     align-items: flex-end;
+    align-self: flex-end;
 }
 
 
@@ -285,14 +292,14 @@ transition: all 0.25s ease-out;
     color:#011627;
 }
 .main-right{
-    width:56%;
+    width:59%;
     display: flex;
     position: relative;
 }
 
 .hero-main{
-    width:97.5%;
-    height:100%;
+    width:100%;
+    /* height:106%; */
 }
 
 .main-right::after{
@@ -341,7 +348,7 @@ border-radius: 1000px;
     transform: translate(0, -100%);
 }
 .right-caro{
-    height:75%;
+    height:70%;
 }
 
 #sweaters{
@@ -398,6 +405,7 @@ color:#A1A1A1;
     font-weight: 700;
 }
 
+
 .sweater-main img{
     width:55%;
     height:100%;
@@ -406,43 +414,59 @@ color:#A1A1A1;
 
 .sweater-main-right{
     height:100%;
-    transform: translate(-6%);
+    width: 45%;
+    transform: translate(-6%,-7%);
 }
+
 
 .sweater-main-right-info{
     margin-bottom: 5rem;
 }
 
-.sweater-main-right-info h5{
+.sweater-main-right-info h1{
+    margin-bottom: 1rem;
+}
+
+.sweater-main-right-info p{
+    margin-bottom: 1.5rem;
+}
+
+.sweater-group{
+    transform: translate(0,5%);
+}
+
+
+.sweater-orange{
 font-family: OpenSans;
 font-weight:400;
-font-size: 0.7rem;
+font-size: 0.8rem;
+letter-spacing: 2px;
 color:#CF7500;
 }
 
 .sweater-item{
     flex-direction: column;
+    flex-basis: 30%;
+    margin-right: 3.33%;
     justify-content: space-between;
 }
 
-.sweater-item:nth-child(1){
+/* .sweater-item:nth-child(1){
     transform: translate(-10%);
 }
 
 .sweater-item:last-child{
     transform: translate(10%);
 
-}
+} */
 .sweater-item img{
-    transform: scale(1.3);
-    width:4.65rem;
-    height:auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    transform: scale(1.5);
 }
 
 .sweater-item h3{
     text-align: center;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     font-family: Poppins;
     font-weight: 500;
     color:#656565;
@@ -452,7 +476,7 @@ color:#CF7500;
 .sweater-item p{
     font-family: Poppins;
     font-weight: 800;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color:#000000;
 }
 
@@ -464,7 +488,7 @@ color:#CF7500;
 
 .girls{
     width: 100%;
-    height: 55vh;
+    height:60vh;
 }
 
 .woolen-kashmiri{
@@ -491,7 +515,7 @@ color:#CF7500;
 }
 .girl-2{
     width:30%;
-    height:100%;
+    height:inherit;
 }
 
 .girl-2 img{
@@ -526,4 +550,162 @@ color:#CF7500;
 
 .girls-info h2{
     font-size: 1rem;
+}
+
+#glasses{
+    padding:1% 10% 0% 10%;
+    width: 100vw;
+    height:100vh;
+    position: relative;
+}
+
+.glasses-top{
+    width:100%;
+    margin:0;
+    position: relative;
+    /* background: #000; */
+    z-index: -11;
+    height: 30%;
+}
+
+.glasses-top h1{
+    color:#EEEFF1;
+    font-size: 12.25rem;
+    font-weight: 100;
+    font-family: Poppins;
+}
+
+.glasses-top h1 span{
+    font-family: Poppins-Bold;
+    font-weight: 900;
+}
+
+.glasses-bottom{
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    padding:5% 2%;
+    /* background-color: #3D405B; */
+}
+
+.glasses-left{
+    flex-basis: 35%;
+    /* background-color: #A1A1A1; */
+}
+
+.glasses-left h1{
+    color:#14322D;
+}
+
+.glasses-left p{
+    width:70%;
+}
+.glasses-right{
+    flex-basis:25.5% ;
+    display: flex;
+    /* background-color: #A1A1A1; */
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.glasses-right img{
+    height: 87.5%;
+    transform: translate(0,-12.5%);
+
+}
+.glasses-color{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin:0.5rem 0;
+}
+.glasses-right-info h3{
+font-family: Poppins;
+font-weight: 500;
+font-size: 1.1rem;
+color:#656565;
+letter-spacing: 2px;
+}
+
+.glasses-color-item{
+    width:1.5rem;
+    height:1.5rem;
+    border-radius: 100px;
+}
+
+.g-yellow{
+    background: conic-gradient(from 180deg,#FFD600,#A59400);
+}
+
+.g-teal{
+    background: conic-gradient(from 180deg,#7ED5E1,#395448);
+}
+
+.g-red{
+    background: conic-gradient(from 180deg,#9B2121,#FF5F5F);
+}
+
+.g-grey{
+    background: conic-gradient(from 180deg,#7F8487,#AAACAD);
+}
+
+.glasses-color-item:not(:last-child){
+    margin-right:0.5rem;
+
+}
+.glasses-right-info p{
+    color:#7F8487;
+    font-family: Nunito-light;
+    font-size: 0.85rem;
+    width:85%;
+    margin-bottom: 1rem;
+}
+
+.glasses-right-info h1{
+    font-family: Poppins-Bold;
+    font-weight: 500;
+    color:#14322D;
+    font-size: 3rem;
+}
+
+..glasses-right-info h1 .text-thin{
+    font-weight: 200;
+}
+.glasses-middle{
+    position: absolute;
+    bottom:0%;
+    right:29%;
+    width:41%;
+    height:100%;
+}
+.glasses-circle-small{
+    position: absolute;
+    bottom:0%;
+    right:35%;
+    height:27.5rem;
+    border: 1px solid #3D405B;
+        border-radius:10000px;
+    width:27.5rem;
+    z-index:-10;
+}
+
+.glasses-circle-big{
+    position: absolute;
+    bottom:-15%;
+    right:28.5%;
+    height:39.5rem;
+    border: 1px solid rgba(61, 64, 91, 0.30);
+    border-radius:10000px;
+    width:38.5rem;
+    z-index:-10;
+}
+
+.glasses-middle::after{
+    width:10rem;
+    content:'';
+    height: 10rem;
+    position: absolute;
+    border:1px solid rgba(61, 64, 91, 0.3);
+    border-radius: 1000px;
 }
